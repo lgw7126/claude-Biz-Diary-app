@@ -1,5 +1,7 @@
 # 오늘 장사 어땠어요? 📒
 
+[![앱 실행하기](https://img.shields.io/badge/▶%20앱%20실행하기-claude--biz--diary--app.vercel.app-6366f1?style=for-the-badge)](https://claude-biz-diary-app.vercel.app)
+
 > 자영업자를 위한 AI 스마트 경영 일기 앱
 
 ---
@@ -40,31 +42,11 @@
 
 ---
 
-## 로컬 실행 방법
+## 사용 방법
 
-### 1. 환경변수 설정
-
-프로젝트 루트에 `.env` 파일 생성:
-
-```
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-VITE_OPENWEATHER_API_KEY=your_openweather_key
-```
-
-### 2. 설치 및 실행
-
-```bash
-npm install
-npm run dev
-```
-
-브라우저에서 `http://localhost:5173` 접속
-
----
-
-## Supabase 설정
-
-`supabase/schema.sql` 파일을 Supabase SQL Editor에서 실행하세요.
-
-Edge Function (`supabase/functions/analyze-sales/index.ts`)을 Supabase에 배포하고 `CLAUDE_API_KEY` 시크릿을 설정하세요.
+1. **[앱 열기](https://claude-biz-diary-app.vercel.app)** 클릭
+2. 오른쪽 상단 ⚙️ 에서 업종 선택 (식당/카페/미용실 등)
+3. 오늘 매출 금액 입력
+4. 특이사항 선택 (선택사항)
+5. **오늘 기록 저장하기** 버튼 클릭
+6. AI가 자동으로 오늘 장사를 분석해드립니다
