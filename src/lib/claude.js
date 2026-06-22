@@ -1,7 +1,7 @@
 import { supabase } from './supabase'
 
 export async function analyzeEntry(todayEntry, historyEntries, businessType) {
-  const { data, error } = await supabase.functions.invoke('analyze-sales', {
+  const { data, error } = await supabase.functions.invoke('smart-responder', {
     body: {
       today: todayEntry,
       history: historyEntries.slice(0, 7),
